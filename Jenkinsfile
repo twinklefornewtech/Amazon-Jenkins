@@ -6,13 +6,6 @@ pipeline {
         buildMaven()
       }
     }
-
-    stage('Test') {
-      steps {
-        isUnix()
-      }
-    }
-
   }
   environment {
     PATH = '/usr/bin:/bin:/usr/local/bin'
